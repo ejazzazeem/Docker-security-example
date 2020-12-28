@@ -12,7 +12,7 @@ services:
       - POSTGRES_DB=clair
     
   clair:     quay.io/coreos/clair
-    image: quay.io/coreos/clair:v4.0
+    image: quay.io/coreos/clair:latest
     restart: unless-stopped
     volumes:
       - ./docker-compose-data/clair-config/:/config/:ro
