@@ -11,8 +11,8 @@ services:
       - POSTGRES_USER=clair
       - POSTGRES_DB=clair
     
-  clair:
-    image: quay.io/coreos/clair:v4.0.0-rc.24
+  clair:     quay.io/coreos/clair
+    image: quay.io/coreos/clair:v4.0
     restart: unless-stopped
     volumes:
       - ./docker-compose-data/clair-config/:/config/:ro
